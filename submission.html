@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width"  initial-scale=1 />
+  <title>
+    Add Place
+  </title>
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="add_portrait.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="add_desktop.css">
+  <link rel="icon" href="image/icon.jpg">
+</head>
+<body>
+
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+    <li><a href="registration.html">Register</a></li>
+    <li><a href="submission.html">Add Location</a></li>
+  </ul>
+
+
+  <div class="modal">
+
+    <form class="modal-content"  style="background-color:rgba(215, 233, 248, 0.7)" action="#SOME_URL_TO_PHP" method=POST name="#form_registration" onsubmit="#SOME_URL_TO_PHP" onreset="#SOME_URL_TO_PHP">
+      <div class="container">
+        <h1>
+          Know of a cool place to parkour? Share it with the community!
+        </h1>
+        <!-- <p>Please fill out your details in the form below </p> -->
+        <input class="textbox" type="text" name= "name" placeholder="What's it called?"  >
+        <br>
+        <input class="textbox_num" type="number" name="city" placeholder="City" >
+        <input class="textbox_num" type="address" name="city" placeholder="Address" >
+        <br>
+        <input class="textbox" type="text" name= "postal_code" placeholder="Postal Code"  >
+        <br>
+        <input class="textbox_num" type="number" name="location_latitude" placeholder="Latitude" >
+
+        <input class="textbox_num" type="number" name="location_longitude" placeholder="Longitude" >
+        <br>
+
+        <textarea class="textarea" name= "description" placeholder="Have you been there? What's it like? Describe it!"  ></textarea>
+
+        <p class = "rating_above"> Give it a rating:
+        <select class="rating_dropdown" name="min_rating">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+         </select> </p>
+
+        <p class="file"> Upload Image (PNG, JPG): <input class="file" type="file"></p>
+        <br>
+
+
+        <button class="btnSubmit"><span> Upload </span></button>
+        <br>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
